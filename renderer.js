@@ -47,6 +47,6 @@ installBtn.addEventListener('click', () => {
 // Your counter logic stays the same
 let count = 0;
 incrementBtn.addEventListener('click', () => {
-  count++;
+  count += 2;
   countDisplay.innerText = count;
 });
