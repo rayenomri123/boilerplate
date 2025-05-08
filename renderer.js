@@ -1,6 +1,7 @@
 // renderer.js
 
 // Basic DOM refs
+const version      = document.getElementById('version');
 const infoEl      = document.getElementById('info');
 const progressEl  = document.getElementById('progress');
 const downloadBtn = document.getElementById('downloadBtn');
@@ -9,7 +10,7 @@ const countDisplay= document.getElementById('count');
 const incrementBtn= document.getElementById('incrementBtn');
 
 // Show versions
-infoEl.innerText = `Chrome v${versions.chrome()}, Node v${versions.node()}, Electron v${versions.electron()}`;
+version.innerText = `Chrome v${versions.chrome()}, Node v${versions.node()}, Electron v${versions.electron()}`;
 
 // Ping test
 (async () => {
@@ -47,6 +48,6 @@ installBtn.addEventListener('click', () => {
 // Your counter logic stays the same
 let count = 0;
 incrementBtn.addEventListener('click', () => {
-  count += 2;
+  count += 3;
   countDisplay.innerText = count;
 });
